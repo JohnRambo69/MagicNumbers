@@ -1,0 +1,2 @@
+# MagicNumbers
+EPAM JAVA ACADEMY
