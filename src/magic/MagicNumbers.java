@@ -11,7 +11,7 @@ import java.util.Map;
 public class MagicNumbers {
 	
     private static final int BUFFER_SIZE = 4096;
-    private static final int MAX_SIGNATURE_SIZE = 8;
+    private static final int MAX_SIGNATURE_SIZE = 4;
     
     private static final String FILE_PATH = "data/";
 
@@ -120,5 +120,16 @@ public class MagicNumbers {
     }
 
 
-
+    public static void main(String[] args) throws Exception {
+    	/*
+    	 * examples
+    	 * test1.gif is a gif
+    	 * test2.pdf is a pdf
+    	 * test3.txt is a jpg
+    	 * test4.jpg is a jpg
+    	 */
+    	
+	MagicNumbers mg = new MagicNumbers();
+	System.out.println("File type is: " + mg.getFile(new File(FILE_PATH + "test1.gif")));
+    }
 }
